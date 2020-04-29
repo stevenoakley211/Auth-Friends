@@ -5,6 +5,7 @@ class NewFriend extends React.Component {
         super();
         this.state ={
         friend:{
+            id: `${Date.now()}`,
             name:"",
             age:"",
             email:""

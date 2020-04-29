@@ -38,12 +38,14 @@ addFriend = friend => {
         });
 
 }
+
+
 render() {
     return(
         <div>
             <NewFriend addFriend={this.addFriend} />
             {this.state.friends.map(friend => {
-                return <Friend key={friend.id} data={friend} />
+                return <Friend key={friend.id} data={friend}getData={this.getData}  />
             })}
         </div>
     )
